@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root to: 'home#accueil'
+  get '/user/:id', to: 'gossip#city', as: 'user'
+  get '/gossip', to: 'gossip#show'
+  root to: 'home#index'
   get '/contact', to: 'contact#information'
   get '/team', to: 'team#presentation'
   get 'welcome/:first_name', to: 'welcome#hello'

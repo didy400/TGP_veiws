@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
-  def accueil
-    
+  def index
+    @gossips = Gossip.all
+    @user = User.all
   end
 end
