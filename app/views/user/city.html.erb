@@ -7,11 +7,11 @@
 
   <div class="card">
     <div class="card-header">
-      <p> Auteur: <%= @gossip.user.first_name %> </p>
+      <p> Auteur: <%= @user.first_name %> </p>
     </div>
     <div class="card-body">
       <blockquote class="blockquote mb-0">
-        <p> <%=@gossip..user.city %> </p>
+        <p> <%=@user.city.name %> <%= @user.city.zip_code%> </p>
                 
       </blockquote>
     </div>

@@ -18,7 +18,7 @@
         <div class="card-footer">
           <p class="small text-muted mr-0">
           
-            Post by <a href="<%= 12 %>">User on <%= gossip.created_at.strftime("%d/%m/%Y") %> at <%= gossip.created_at.strftime("%H:%I") %>.</a> 
+            Post by <a href="<%= user_path(gossip.user.id) %>"><%= gossip.user.first_name + " " + gossip.user.last_name%></a>  on <%= gossip.created_at.strftime("%d/%m/%Y") %> at <%= gossip.created_at.strftime("%H:%I") %>.
           </p>
         </div>
 

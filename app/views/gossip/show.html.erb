@@ -12,7 +12,7 @@
     <div class="card-body">
       <blockquote class="blockquote mb-0">
         <p> <%=@gossip.content %> </p>
-        <footer class="blockquote-footer">Created at : <%=@gossip.created_at %> in <cite title="Source Title">By : <%=@gossip.user.first_name %></cite></footer>
+        <footer class="blockquote-footer"> Created at : <%=@gossip.created_at %> in <cite title="Source Title"> By : <a href="<%= user_path(@gossip.user.id) %>"> <%=@gossip.user.first_name %></a></cite></footer>
         
       </blockquote>
     </div>
